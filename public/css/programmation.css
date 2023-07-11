@@ -1,0 +1,111 @@
+.prog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.vendredi, .samedi {
+    display: grid;
+    grid-template-columns: 300px;
+}
+
+.prog-vendredi > div, .prog-samedi > div {
+    margin: 10px 0px;
+    height: 300px;
+}
+
+/* Image de prog et animation hover */
+
+.img1 {
+    background-image: url('../Images/Programmation/Untitled/Fanfare saugrenue.png');
+}
+.img2 {
+    background-image: url('../Images/Programmation/Untitled/Silly Boy Blue.png');
+}
+.img3 {
+    background-image: url('../Images/Programmation/Untitled/Funky Breakz.png');
+}
+.img4 {
+    background-image: url('../Images/Programmation/Untitled/Quasi qui.png');
+}
+.img5 {
+    background-image: url('../Images/Programmation/Untitled/Hervé.png');
+}
+.img6 {
+    background-image: url('../Images/Programmation/Untitled/Fatboy slim.png');
+}
+.img7 {
+    background-image: url('../Images/Programmation/Untitled/Lucie Atunes.png');
+}
+.img8 {
+    background-image: url('../Images/Programmation/Untitled/JeanneTo.png');
+}
+.img9 {
+    background-image: url('../Images/Programmation/Untitled/chilla.png');
+}
+.img10 {
+    background-image: url('../Images/Programmation/Untitled/Bigflo et oli.png');
+}
+.img11 {
+    background-image: url('../Images/Programmation/Untitled/naâman.png');
+}
+.img12 {
+    background-image: url('../Images/Programmation/Untitled/adé.png');
+}
+.img13 {
+    background-image: url('../Images/Programmation/Untitled/Mouv\'n\'brass.png');
+}
+.img14 {
+    background-image: url('../Images/Programmation/Untitled/Museau.png');
+}
+
+span {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    padding-top: 150px;
+    opacity: 0;
+    color: white;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0);
+    font-family: 'Krona One', 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    transition: opacity 1.5s ease;
+}
+
+span:hover {
+    opacity: 1;
+}
+
+span:not(:hover) {
+    transition: opacity 1s ease;
+    background-color: transparent;
+    opacity: 0;
+}
+
+.bar-separation {
+    height: 2px;
+    width: 302px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0);;
+    margin: 40px 0px;
+}
+
+/* reponsive */
+
+@media screen and (min-width: 1100px) {
+    .prog {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .bar-separation {
+        width: 2px;
+        height: 2100px;
+        margin: 0px 200px;
+    }
+}

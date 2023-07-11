@@ -1,0 +1,31 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+## Route index.html.twig ##
+home:
+    path: /
+    controller: App\Controller\IndexController::index
+
+## Route programmation.html.twig ##
+prog:
+    path: /programmation
+    controller: App\Controller\ProgController::prog
+
+## Route billeterie.html.twig ##
+billeterie:
+    path: /billeterie
+    controller: App\Controller\BilletController::billet
+    methods: [GET, POST]
+
+## Route informations.html.twig ##
+informations:
+    path: /informations
+    controller: App\Controller\InfosController::infos
+
+## Route confirmation.html.twig ##
+billeterie_confirmation:
+    path: /confirmation
+    controller: App\Controller\BilletController::confirmation

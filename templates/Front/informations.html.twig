@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Festival'eau - Informations</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Krona+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/informations.css">
+    <link rel="stylesheet" type="text/css" href="css/header-logo.css">
+    <script src="javascript/JQuery.js"></script>
+    <script src="javascript/script.js"></script>
+</head>
+<body>
+    <header>
+
+        <div class="background-image"></div>
+        <div class="background-image-opposée"></div>
+
+        <div class="soc-menu-desktop">
+            <div class="soc">
+                <a href='https://twitter.com/'><img src="../Images/icon/twitter_black_logo_icon_147062.png"></a>
+                <a href='https://www.instagram.com/'><img src="../Images/icon/instagram_insta_logo_icon_250828.png"></a>
+                <a href='https://www.facebook.com/'><img src="../Images/icon/facebook_black_logo_icon_147136 1.png"></a>
+            </div>
+
+            <div class="mini-logo">
+                <a href="{{ path('home') }}"><img src="../Images/Header/mini-Logo.png"></a>
+                <p>21 et 22 juillet / DOMAINE NATIONAL DE SAINT-CLOUD  </p>
+            </div>
+
+            <div class="menu">
+                <a href="{{ path('prog') }}">Programmation</a>
+                <a href="{{ path('informations') }}">Informations</a>
+                <a href="{{ path('billeterie') }}">Billeterie</a>
+            </div>
+        </div>
+
+        <div class="big-logo">
+            <a href="{{ path('home') }}"><img src="../Images/Header/Logo.png"></a>
+            <p>21 et 22 juillet / DOMAINE NATIONAL DE SAINT-CLOUD  </p>
+        </div>
+
+        <div class="soc-menu-mobile">
+            <div class="soc">
+                <a href='https://twitter.com/'><img src="../Images/icon/twitter_black_logo_icon_147062.png"></a>
+                <a href='https://www.instagram.com/'><img src="../Images/icon/instagram_insta_logo_icon_250828.png"></a>
+                <a href='https://www.facebook.com/'><img src="../Images/icon/facebook_black_logo_icon_147136 1.png"></a>
+            </div>
+            <div class="menu-déroulant">
+                <img class="btn-menu" src="../Images/icon/menu.png">
+                <div class="menu">
+                   <a href="{{ path('prog') }}">Programmation</a>
+                    <a href="{{ path('informations') }}">Informations</a>
+                    <a href="{{ path('billeterie') }}">Billeterie</a>
+                </div>
+            </div>
+        </div>
+     </header>
+
+     <div class="img-transition"></div>
+     
+     <main>
+        <h1>Informations</h1>
+
+        <div>
+            <h2>Accès au domaine</h2>
+            
+            <div class="flex-row">
+                <div>
+                    <p>L’entrée dans le domaine se fera par l’entrée principal du DOMAINE NATIONAL DE SAINT-CLOUD.
+                    <br/>
+                        Il est conseillé de venir en transport en commun, plusieurs lignes deserves le domaine :</p>
+                    <ul>
+                        <li><img src="../Images/Informations/icons8-train-30.png">Transilien ligne L : arrêt Garches - Marnes-La-Coquette</li>
+                        <li><img src="../Images/Informations/icons8-bus-30.png"> ligne 360, 426, 460 : arrêt Garches - Marnes-La-Coquette</li>
+                    </ul>
+                </div>
+
+                <img class="carte" src="../Images/Informations/carte_d'accès.PNG">
+            </div>
+        </div>
+
+        <div class="bar-separation"></div>
+
+        <div class="activitées">
+            <h2>Activitées</h2>
+            <div>
+                <div>
+                    <h2>Bataille d'eau</h2>
+
+                    <div class="flex-row">
+                        <img src="../Images/Informations/bataille-d'eau1.jpg">
+                    
+                        <p>
+                            Des batailles d’eau seront organisées toutes au long du festival pour être assuré que personne n’aura trop chaud ! 
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Espace nourriture</h2>
+
+                    <div class="flex-inverse">
+                        <img src="../Images/Informations/espace-food.jpg">
+
+                        <p>
+                            Un espace sera dédié à l’alimentation avec de nombreux food-truck de qualités et une grande variétée de styles culinaire ! 
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Espace Fraîcheur</h2>
+
+                    <div class="flex-row">
+                        <img src="../Images/Informations/espace-fraicheur 1.png">
+
+                        <p>
+                            Un espace dédié au repos vous sera également proposé, avec des brumisateurs au cas ou les batailles d’eau n’ont pas suffit.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Spectacle d'eau</h2>
+
+                    <div class="flex-inverse">
+                        <img src="../Images/Informations/spectacle d'eau1.jpg">
+
+                        <p>
+                            De 20 à 21 heures durant les 2 jours de l’évènement, un spectacle d’eau aura lieu à la Grande Fontaine du domaine.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

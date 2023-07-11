@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Festival'eau - Billeterie</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Krona+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/billeterie.css">
+    <link rel="stylesheet" type="text/css" href="css/header-logo.css">
+    <script src="javascript/JQuery.js"></script>
+    <script src="javascript/script.js"></script>
+</head>
+<body>
+    <header>
+
+        <div class="background-image"></div>
+        <div class="background-image-opposée"></div>
+
+        <div class="soc-menu-desktop">
+            <div class="soc">
+               <a href='https://twitter.com/'><img src="../Images/icon/twitter_black_logo_icon_147062.png"></a>
+                <a href='https://www.instagram.com/'><img src="../Images/icon/instagram_insta_logo_icon_250828.png"></a>
+                <a href='https://www.facebook.com/'><img src="../Images/icon/facebook_black_logo_icon_147136 1.png"></a>
+            </div>
+
+            <div class="mini-logo">
+                <a href="{{ path('home') }}"><img src="../Images/Header/mini-Logo.png"></a>
+                <p>21 et 22 juillet / DOMAINE NATIONAL DE SAINT-CLOUD  </p>
+            </div>
+
+            <div class="menu">
+                <a href="{{ path('prog') }}">Programmation</a>
+                <a href="{{ path('informations') }}">Informations</a>
+                <a href="{{ path('billeterie') }}">Billeterie</a>
+            </div>
+        </div>
+
+        <div class="big-logo">
+            <a href="{{ path('home') }}"><img src="../Images/Header/Logo.png"></a>
+            <p>21 et 22 juillet / DOMAINE NATIONAL DE SAINT-CLOUD  </p>
+        </div>
+
+        <div class="soc-menu-mobile">
+            <div class="soc">
+               <a href='https://twitter.com/'><img src="../Images/icon/twitter_black_logo_icon_147062.png"></a>
+                <a href='https://www.instagram.com/'><img src="../Images/icon/instagram_insta_logo_icon_250828.png"></a>
+                <a href='https://www.facebook.com/'><img src="../Images/icon/facebook_black_logo_icon_147136 1.png"></a>
+            </div>
+            <div class="menu-déroulant">
+                <img class="btn-menu" src="../Images/icon/menu.png">
+                <div class="menu">
+                    <a href="{{ path('prog') }}">Programmation</a>
+                    <a href="{{ path('informations') }}">Informations</a>
+                    <a href="{{ path('billeterie') }}">Billeterie</a>
+                </div>
+            </div>
+        </div>
+     </header>
+
+     <div class="img-transition"></div>
+     
+     <main>
+        <h1>Billeterie</h1>
+
+            {% block billeterie_form %}
+                   {{ form_start(billeterie_form) }}
+
+                    {{ form_widget(billeterie_form) }}
+
+                    <script src="{{ asset('javascript/script.js') }}"></script>
+                    <div id="prix" data-url="{{ path('billeterie') }}"></div>
+
+                    {{ form_end(billeterie_form) }}
+                
+            {% endblock %}
+       
+    </main>
+</body>
+</html>

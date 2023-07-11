@@ -1,0 +1,35 @@
+.mini-logo {
+    display: none;
+}
+
+@media screen and (min-width: 1100px) {
+    .big-logo {
+        display: none;
+    }
+
+    .mini-logo {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .soc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .soc > a {
+        margin: 5px 5px;
+    }
+
+    .menu {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1355px) {
+    .soc {
+        display: initial;
+        margin-top: 30px;
+    }
+}

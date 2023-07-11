@@ -1,0 +1,111 @@
+main, #billeterie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form, .confirmation {
+    background-color: #00284D;
+    border-radius: 10px;
+    padding: 50px 10px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+}
+
+#billeterie div {
+    margin: 30px 0px;
+    width: 290px;
+}
+
+#billeterie > div:nth-child(1), 
+#billeterie > div:nth-child(3), 
+#billeterie > div:nth-child(4), 
+#billeterie > div:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+}
+
+#billeterie> div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 170px;
+    height: 35px;
+    border-radius: 50px;
+    background-image: url('../Images/Header/water-1018808_1280.jpg');
+    font-family: 'Krona One', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+select, input {
+    margin-top: 10px;
+    font-family: 'Krona One', Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+label, #prix, .confirmation {
+    font-family: 'Krona One', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    color: black;
+    font-size: 14px;
+    background-color: white;
+    padding: 10px 5px;
+}
+
+.jours > label:nth-child(2) {
+    border-radius: 10px 0px 0px 10px;
+    border-right: 1px solid black; 
+}
+
+.jours > label:last-child {
+    border-radius: 0 10px 10px 0;
+    border-left: 1px solid black; 
+}
+
+input[type="radio"]:checked + label {
+    color: white;
+    background-color: black;
+}
+
+#prix, .confirmation {
+    text-align: center;
+}
+
+.confirmation {
+    margin-top: 100px;
+}
+
+.retour {
+    width: 250px;
+    height: 40px;
+}
+
+@media screen and (min-width: 1100px) {
+    form {
+        width: 900px;
+    }
+
+    #billeterie div {
+        width: 500px;
+    }
+
+    #billeterie > div:nth-child(1) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nbpers {
+        width: 100px;
+        margin: 5px 80px 5px 0px;
+    }
+}

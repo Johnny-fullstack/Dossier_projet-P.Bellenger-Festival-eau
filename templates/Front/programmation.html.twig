@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Festival'eau - Programmation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Krona+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/programmation.css">
+    <link rel="stylesheet" type="text/css" href="css/header-logo.css">
+    <script src="javascript/JQuery.js"></script>
+    <script src="javascript/script.js"></script>
+</head>
+<body>
+    <header>
+
+        <div class="background-image"></div>
+        <div class="background-image-opposée"></div>
+
+        <div class="soc-menu-desktop">
+            <div class="soc">
+                <a href='https://twitter.com/'><img src="../Images/icon/twitter_black_logo_icon_147062.png"></a>
+                <a href='https://www.instagram.com/'><img src="../Images/icon/instagram_insta_logo_icon_250828.png"></a>
+                <a href='https://www.facebook.com/'><img src="../Images/icon/facebook_black_logo_icon_147136 1.png"></a>
+            </div>
+
+            <div class="mini-logo">
+                <a href="{{ path('home') }}"><img src="../Images/Header/mini-Logo.png"></a>
+                <p>21 et 22 juillet / DOMAINE NATIONAL DE SAINT-CLOUD  </p>
+            </div>
+
+            <div class="menu">
+                <a href="{{ path('prog') }}">Programmation</a>
+                    <a href="{{ path('informations') }}">Informations</a>
+                    <a href="{{ path('billeterie') }}">Billeterie</a>
+            </div>
+        </div>
+
+        <div class="big-logo">
+            <a href="{{ path('home') }}"><img src="../Images/Header/Logo.png"></a>
+            <p>21 et 22 juillet / DOMAINE NATIONAL DE SAINT-CLOUD  </p>
+        </div>
+
+        <div class="soc-menu-mobile">
+            <div class="soc">
+              <a href='https://twitter.com/'><img src="../Images/icon/twitter_black_logo_icon_147062.png"></a>
+                <a href='https://www.instagram.com/'><img src="../Images/icon/instagram_insta_logo_icon_250828.png"></a>
+                <a href='https://www.facebook.com/'><img src="../Images/icon/facebook_black_logo_icon_147136 1.png"></a>
+            </div>
+            <div class="menu-déroulant">
+                <img class="btn-menu" src="../Images/icon/menu.png">
+                <div class="menu">
+                   <a href="{{ path('prog') }}">Programmation</a>
+                    <a href="{{ path('informations') }}">Informations</a>
+                    <a href="{{ path('billeterie') }}">Billeterie</a>
+                </div>
+            </div>
+        </div>
+     </header>
+
+     <div class="img-transition"></div>
+     
+     <main>
+        <h1>Programmation</h1>
+
+        <div class="prog">
+            <div class="vendredi">
+                <h2>Vendredi</h2>
+                <div class="prog-vendredi">
+                    <div class="img1">
+                        <span>16h</span>
+                    </div>
+                    <div class="img2">
+                        <span>17h</span>
+                    </div>
+                    <div class="img3">
+                        <span>18h</span>
+                    </div>
+                    <div class="img4">
+                        <span>19h</span>
+                    </div>
+                    <div class="img5">
+                        <span>21h</span>
+                    </div>
+                    <div class="img6">
+                        <span>22h</span>
+                    </div>
+                    <div class="img7">
+                        <span>23h</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar-separation"></div>
+
+            <div class="samedi">
+                <h2>Samedi</h2>
+                <div class="prog-samedi">
+                    <div class="img8">
+                        <span>16h</span>
+                    </div>
+                    <div class="img9">
+                        <span>17h</span>
+                    </div>
+                    <div class="img10">
+                        <span>18h</span>
+                    </div>
+                    <div class="img11">
+                        <span>19h</span>
+                    </div>
+                    <div class="img12">
+                        <span>21h</span>
+                    </div>
+                    <div class="img13">
+                        <span>22h</span>
+                    </div>
+                    <div class="img14">
+                        <span>23h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

@@ -25,7 +25,7 @@ form, .confirmation {
     flex-direction: column;
 }
 
-#billeterie> div:last-child {
+#billeterie > div:nth-child(6) {
     display: flex;
     justify-content: center;
 }

@@ -76,7 +76,7 @@ div > img:not(header img) {
         align-items: center;
     }
 
-    .flex-map:first-child {
+    .flex-map > div:first-child {
         margin-right: 20px;
     }
 }

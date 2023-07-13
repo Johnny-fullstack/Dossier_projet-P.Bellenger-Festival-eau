@@ -69,12 +69,6 @@ div > img:not(header img) {
     }
 }
 
-@media screen and (min-width: 610px) {
-    iframe {
-        width: auto;
-    }
-}
-
 @media screen and (min-width: 1140px) {
     .flex-map {
         display: flex;
@@ -82,7 +76,7 @@ div > img:not(header img) {
         align-items: center;
     }
 
-    .felx-map:first-child {
+    .flex-map:first-child {
         margin-right: 20px;
     }
 }

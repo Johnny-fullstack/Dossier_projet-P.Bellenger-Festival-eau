@@ -126,7 +126,7 @@ nav {
     justify-content: center;
 }
 
-.menu-déroulant:hover .menu {
+.menu-déroulant:hover nav {
     opacity: 1;
     max-height: 130px;
 }

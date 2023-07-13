@@ -33,7 +33,8 @@ class BilleterieType extends AbstractType
                 ],
                 'expanded' => false,
                 'multiple' => false,
-                'attr' => ['class' => 'nbpers'],
+                'attr' => [
+                    'class' => 'nbpers'],
             ])
 
             ->add('jour', ChoiceType::class, [
@@ -56,6 +57,7 @@ class BilleterieType extends AbstractType
                 'attr' => [
                     'placeholder' => '...',
                     'class' => 'identité',
+                    'pattern' => '^[^<>]+$'
                 ],
             ])
 
@@ -64,7 +66,8 @@ class BilleterieType extends AbstractType
                 'required' => true,
                 'attr' => [
                     'placeholder' => '...',
-                    'class' => 'identité' 
+                    'class' => 'identité',
+                    'pattern' => '^[^<>]+$' 
                 ],
             ])
     
@@ -74,6 +77,7 @@ class BilleterieType extends AbstractType
                 'attr' => [
                     'placeholder' => '...',
                     'class' => 'email',
+                    'pattern' => '^[^<>]+$'
                 ],
             ])
 

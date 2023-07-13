@@ -115,7 +115,7 @@ a:not(.soc a) {
     margin: 5px;
 }
 
-.menu {
+nav {
     position: relative;
     opacity: 0;
     max-height: 0;
@@ -131,7 +131,7 @@ a:not(.soc a) {
     max-height: 130px;
 }
 
-.menu > a, main a {
+nav > a, main a {
     background-color: black;
     width: 138px;
     height: 32px;
@@ -139,7 +139,7 @@ a:not(.soc a) {
     border-radius: 50px;
 }
 
-.menu > a {
+nav > a {
     margin: 5px 0px;
     padding: 7px 0px;
 }
@@ -159,7 +159,7 @@ main p {
         justify-content: space-between;
     }
 
-    .menu {
+    nav {
         opacity: initial;
         max-height: 36px;
         overflow: initial;
@@ -167,7 +167,7 @@ main p {
         margin-right: 5px;
     }
 
-    .menu > a {
+    nav > a {
         padding: 1px 0px;
         margin: 10px;
     }

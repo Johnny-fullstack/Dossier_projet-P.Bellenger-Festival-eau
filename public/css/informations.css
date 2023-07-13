@@ -78,6 +78,11 @@ div > img:not(header img) {
 @media screen and (min-width: 1140px) {
     .flex-map {
         display: flex;
+        flex-direction: row;
         align-items: center;
+    }
+
+    .felx-map:first-child {
+        margin-right: 20px;
     }
 }

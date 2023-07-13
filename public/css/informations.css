@@ -7,7 +7,6 @@ main {
 .flex-map {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 iframe {
@@ -72,13 +71,13 @@ div > img:not(header img) {
 
 @media screen and (min-width: 610px) {
     iframe {
-        width: initial;
+        width: auto;
     }
 }
 
 @media screen and (min-width: 1140px) {
     .flex-map {
         display: flex;
-        justify-content: space-around;
+        align-items: center;
     }
 }

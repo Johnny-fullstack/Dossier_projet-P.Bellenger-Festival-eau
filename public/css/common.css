@@ -172,6 +172,10 @@ main p {
         margin: 10px;
     }
 
+    .soc > a {
+        margin: 0px 5px;
+    }
+
     .soc {
         margin: 11px;
     }

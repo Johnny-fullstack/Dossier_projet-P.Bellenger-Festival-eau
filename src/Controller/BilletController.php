@@ -25,6 +25,7 @@ class BilletController extends AbstractController
 
         $billeterie_form = $this->createForm(BilleterieType::class, $billet);
         $billeterie_form->handleRequest($request);
+        
         if (isset($_COOKIE['prix'])) {
             $prix = $_COOKIE['prix'];
         }
